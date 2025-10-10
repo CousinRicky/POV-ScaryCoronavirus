@@ -1,4 +1,4 @@
-/* scarycoronavirus.inc 1.0B
+/* scarycoronavirus.inc 1.0c-rc.1
  * Persistence of Vision Raytracer include file
  * POV-Ray Object Collection
  *
@@ -17,33 +17,33 @@
  * Implementation note: due to POV-Ray namespace scope leakage, local variables
  * and function arguments (other than x, y, and z) *must* be prefixed.
  *
- * Copyright (C) 2020 - 2021 Richard Callwood III.  Some rights reserved.
- * This file is licensed under the terms of the CC-LGPL
- * a.k.a. the GNU Lesser General Public License version 2.1.
+ * Copyright (C) 2020 - 2025 Richard Callwood III.  Some rights reserved.
+ * This file is licensed under the terms of the GNU-LGPL.
  *
- * This library is free software; you can redistribute it and/or
- * modify it under the terms of the GNU Lesser General Public
- * License version 2.1 as published by the Free Software Foundation.
+ * This library is free software: you can redistribute it and/or modify it
+ * under the terms of the GNU Lesser General Public License as published
+ * by the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
  *
  * This library is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  Please
- * visit https://www.gnu.org/licenses/old-licenses/lgpl-2.1.html for
- * the text of the GNU Lesser General Public License version 2.1.
+ * visit https://www.gnu.org/licenses/lgpl-3.0.html for the text
+ * of the GNU Lesser General Public License version 3.
  *
  * Vers  Date         Notes
  * ----  ----         -----
  *       2020-Mar-28  Started.
  * 1.0   2020-Apr-15  Completed.
  * 1.0A  2020-May-09  Adapted for the POV-Ray Object Collection.
- * 1.0B  2021-Aug-15  The license text is updated.
+ * 1.0c  2025-Oct-09  The license is upgraded to LGPL 3.
  */
 #ifndef (ScaryCoronavirus_Inc_Temp)
 #declare ScaryCoronavirus_Inc_Temp = version;
 #declare ScaryCoronavirus_Version = 1.0;
 #version max (3.5, min (3.8, version)); // Bracket the POV version.
 #ifdef (View_POV_Include_Stack)
-  #debug "#include \"scarycoronavirus.inc\" //version 1.0B\n"
+  #debug "#include \"scarycoronavirus.inc\" //version 1.0c-rc.1\n"
 #end
 
 #include "roundedge.inc"

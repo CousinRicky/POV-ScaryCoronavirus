@@ -2,22 +2,24 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>ScaryCoronavirus 1.0B User Manual | POV-Ray Object Collection</title>
+<title>ScaryCoronavirus 1.0c-rc.1 User Manual | POV-Ray Object Collection</title>
 <link rel="stylesheet" type="text/css" href="scarycoronavirus.css">
 </head>
 
 <body>
 
-<h1>ScaryCoronavirus 1.0B User&nbsp;Manual</h1>
+<h1>ScaryCoronavirus 1.0c-rc.1 User&nbsp;Manual</h1>
 
 <h2>Abstract</h2>
 
 <p>
-<a href="scarycoronavirus.jpg"><img class="demo" src="scarycoronavirus_thumbnail.jpg" title="Larger demo image" alt="[Thumbnail which links to a larger demo image]"></a>
+<a href="scarycoronavirus.jpg" class="demo"><img src="scarycoronavirus_thumbnail.jpg" title="Larger demo image" alt="[Thumbnail which links to a larger demo image]"></a>
 ScaryCoronavirus is a library module from the
 <a href="https://www.povray.org/">Persistence of Vision Raytracer (POV-Ray)</a>
-<a href="http://lib.povray.org/">Object Collection</a>.
-It models a Gorgon-like virion based on the SARS-CoV-2 coronavirus. The protein spikes have demonic-looking faces. It is hoped that this module will provide some cathartic relief during the COVID-19 pandemic.
+<a href="https://lib.povray.org/">Object Collection</a>.
+It models a Gorgon-like virion based on the SARS-CoV-2 coronavirus.
+The protein spikes have demonic-looking faces.
+It is hoped that this module will provide some cathartic relief during the COVID-19 pandemic.
 
 <hr>
 
@@ -80,9 +82,6 @@ It models a Gorgon-like virion based on the SARS-CoV-2 coronavirus. The protein 
   <th>File</th>
   <th>Description</th>
  </tr><tr>
-  <td><code>README</code><var>nnnnnn</var><code>.html</code></td>
-  <td>Important information about using the POV-Ray Object Collection</td>
- </tr><tr>
   <td><code>scarycoronavirus_description.txt</code></td>
   <td>A brief description of ScaryCoronavirus</td>
  </tr><tr>
@@ -93,15 +92,13 @@ It models a Gorgon-like virion based on the SARS-CoV-2 coronavirus. The protein 
   <td>Prerequisites</td>
  </tr><tr>
   <td><code>scarycoronavirus.css</code></td>
-  <td rowspan="3">Other administrative files</td>
- </tr><tr>
-  <td><code>cc-LGPL-a.png</code></td>
- </tr><tr>
-  <td><code>Version</code><var>nnnnnn</var><code>.js</code></td>
+  <td>Formatting for this user manual</td>
  </tr>
 </table>
 
-<p>The italicized <var>nnnnnn</var> in some of the file names represents the 6-digit number that is in the name of the <code>.zip</code> file as downloaded from <a href="http://lib.povray.org/">lib.povray.org</a>. If you downloaded this module from some other repository, the files <code>cc-LGPL-a.png</code>, <code>README<var>nnnnnn</var>.html</code>, and <code>Version<var>nnnnnn</var>.js</code> may not be present. Please see the <a href="https://web.archive.org/web/20120419111948/http://lib.povray.org/usersguide/02using.html">Object Collection User’s Guide</a> if <code>README<var>nnnnnn</var>.html</code> is not present.
+<p>Depending on where you obtained this library, there may be other administrative files included with this download,
+including one named <code>README<var>{series-of-digits}</var>.html</code> which contains important information about using the POV-Ray Object Collection.
+Please see the <a href="https://web.archive.org/web/20120419111948/http://lib.povray.org/usersguide/02using.html">Object Collection User Guide</a> if this file is not present.
 
 <p><a href="#toc">Table of contents</a><hr>
 
@@ -109,14 +106,21 @@ It models a Gorgon-like virion based on the SARS-CoV-2 coronavirus. The protein 
 
 <ul>
  <li>POV-Ray version 3.5 or later
- <li><a href="http://lib.povray.org/searchcollection/index2.php?objectName=RoundEdge&amp;contributorTag=Cousin%20Ricky">RoundEdge</a>, available from the Object Collection
+ <li><a href="https://lib.povray.org/searchcollection/index2.php?objectName=RoundEdge&amp;contributorTag=Cousin%20Ricky" target="_blank">RoundEdge</a>
+  (<a href="https://github.com/CousinRicky/POV-RoundEdge" target="_blank">RoundEdge mirror</a>), also available from the Object Collection
 </ul>
 
 <h3 id="Compliance">Namespace Compliance</h3>
 
-<p>All file names in this module and all global and local identifiers defined in <code>scarycoronavirus.inc</code> comply fully with the <a href="https://news.povray.org/470b46cb%241%40news.povray.org">Object Collection naming standards</a>, as <a href="https://news.povray.org/48ba92e8%241%40news.povray.org">revised August 2008</a> and <a href="https://news.povray.org/povray.object-collection/thread/%3Cweb.5018a69dae7e89cb85de7b680%40news.povray.org%3E/">proposed August 2012</a>. The files in this module may be safely stored in the same folder as other fully compliant Object Collection modules.
+<p>All file names in this module and all global and local identifiers defined in <code>scarycoronavirus.inc</code> comply fully with the
+<a href="https://news.povray.org/470b46cb%241%40news.povray.org">Object Collection naming standards</a>, as
+<a href="https://news.povray.org/48ba92e8%241%40news.povray.org">revised August 2008</a> and
+<a href="https://news.povray.org/povray.object-collection/thread/%3Cweb.5018a69dae7e89cb85de7b680%40news.povray.org%3E/">proposed August 2012</a>.
+The files in this module may be safely stored in the same folder as other fully compliant Object Collection modules.
 
-<p>The reserved prefixes for this module are “<code>ScaryCoronavirus</code>” and “<code>scov</code>,” including any uppercase and lowercase variants. ScaryCoronavirus uses the Object Collection module RoundEdge, which reserves the prefixes “<code>RoundEdge</code>” and “<code>RE</code>,” including any uppercase and lowercase variants. To avoid conflicts, do not introduce into your scene description file any identifiers with any of these prefixes as names, or any identifiers that start with any of these prefixes plus an underscore.
+<p>The reserved prefixes for this module are “<code>ScaryCoronavirus</code>” and “<code>scov</code>,” including any uppercase and lowercase variants.
+ScaryCoronavirus uses the Object Collection module RoundEdge, which reserves the prefixes “<code>RoundEdge</code>” and “<code>RE</code>,” including any uppercase and lowercase variants.
+To avoid conflicts, do not introduce into your scene description file any identifiers with any of these prefixes as names, or any identifiers that start with any of these prefixes plus an underscore.
 
 <p>The identifier <code>View_POV_Include_Stack</code> from the standard include file <code>debug.inc</code> is referenced by <code>scarycoronavirus.inc</code>, although <code>debug.inc</code> itself is not used.
 
@@ -140,7 +144,9 @@ It models a Gorgon-like virion based on the SARS-CoV-2 coronavirus. The protein 
  <tr>
   <td><code>Diameter</code></td>
   <td>float</td>
-  <td>The diameter of the virion, with each POV unit corresponding to 1 nanometer. The diameters should be between 50 and 200; diameters smaller than 50 are disallowed.</td>
+  <td>The diameter of the virion, with each POV unit corresponding to 1 nanometer.
+   The diameters should be between 50 and 200; diameters smaller than 50 are disallowed.
+  </td>
  </tr><tr>
   <td><code>t_Envelope</code></td>
   <td>texture</td>
@@ -148,7 +154,10 @@ It models a Gorgon-like virion based on the SARS-CoV-2 coronavirus. The protein 
  </tr><tr>
   <td><code>t_Spike</code></td>
   <td>texture</td>
-  <td>The texture of the spike proteins. For some quality levels, a normal will be applied to this texture. Textures for the eyes and mouth will be automatically supplied.</td>
+  <td>The texture of the spike proteins.
+   For some quality levels, a normal will be applied to this texture.
+   Textures for the eyes and mouth will be automatically supplied.
+  </td>
  </tr><tr>
   <td><code>t_MProtein</code></td>
   <td>texture</td>
@@ -176,7 +185,9 @@ It models a Gorgon-like virion based on the SARS-CoV-2 coronavirus. The protein 
  </tr><tr>
   <td><code>scov_Debug</code></td>
   <td>float</td>
-  <td>If <code>on</code>, each call to <code>ScaryCoronavirus()</code> will write data to the debug stream; and also issue a warning if the construction algorithm is unable to avoid a collision between stud proteins.</td>
+  <td>If <code>on</code>, each call to <code>ScaryCoronavirus()</code> will write data to the debug stream;
+   and also issue a warning if the construction algorithm is unable to avoid a collision between stud proteins.
+  </td>
   <td><code>off</code></td>
  </tr><tr>
   <td><code>scov_Glow</code></td>
@@ -191,7 +202,9 @@ It models a Gorgon-like virion based on the SARS-CoV-2 coronavirus. The protein 
  </tr>
 </table>
 
-<p>If you wish a different value for <code>scov_Seed</code> or <code>scov_Glow</code>, you must declare it prior to #including <code>scarycoronavirus.inc</code>. Parameter <code>scov_Debug</code> may be changed at any time.
+<p>If you wish a different value for <code>scov_Seed</code> or <code>scov_Glow</code>,
+you must declare it prior to #including <code>scarycoronavirus.inc</code>.
+Parameter <code>scov_Debug</code> may be changed at any time.
 
 <h3 id="Quality">Quality Codes</h3>
 
@@ -200,19 +213,27 @@ It models a Gorgon-like virion based on the SARS-CoV-2 coronavirus. The protein 
  <tr>
   <td><code>SCOV_BLOB_QUALITY</code></td>
   <td>float</td>
-  <td>The envelope is constructed with a single lumpy blob, and a normal is applied to some of the protein textures.</td>
+  <td>The envelope is constructed with a single lumpy blob,
+   and a normal is applied to some of the protein textures.
+  </td>
  </tr><tr>
   <td><code>SCOV_DRAFT_QUALITY</code></td>
   <td>float</td>
-  <td>A smooth sphere is used for the envelope, and no normal is applied to the protein textures.</td>
+  <td>A smooth sphere is used for the envelope,
+   and no normal is applied to the protein textures.
+  </td>
  </tr><tr>
   <td><code>SCOV_MERGE_QUALITY</code></td>
   <td>float</td>
-  <td>The envelope is constructed with a merge of a sphere and a blob of lumps, and a normal is applied to some of the protein textures.</td>
+  <td>The envelope is constructed with a merge of a sphere and a blob of lumps,
+   and a normal is applied to some of the protein textures.
+  </td>
  </tr><tr>
   <td><code>SCOV_UNION_QUALITY</code></td>
   <td>float</td>
-  <td>The envelope is constructed with a union of a sphere and a blob of lumps, and a normal is applied to some of the protein textures.</td>
+  <td>The envelope is constructed with a union of a sphere and a blob of lumps,
+   and a normal is applied to some of the protein textures.
+  </td>
  </tr>
 </table>
 
@@ -223,7 +244,7 @@ It models a Gorgon-like virion based on the SARS-CoV-2 coronavirus. The protein 
  <tr>
   <td><code>ScaryCoronavirus_Version</code></td>
   <td>float</td>
-  <td>The ScaryCoronavirus version, in case the scene file needs that information.</td>
+  <td>The ScaryCoronavirus version.</td>
   <td>1.0</td>
  </tr><tr>
   <td><code>SCOV_HSPIKE</code></td>
@@ -235,19 +256,23 @@ It models a Gorgon-like virion based on the SARS-CoV-2 coronavirus. The protein 
 
 <h3>Internal Identifiers</h3>
 
-<p>Any identifiers in <code>scarycoronavirus.inc</code> that are not documented in this manual are considered “private” or “protected,” and are subject to change or elimination in a future update.
+<p>Any identifiers in <code>scarycoronavirus.inc</code> that are not documented in this manual are considered “private,” and are subject to change or elimination in a future update.
 
 <p><a href="#toc">Table of contents</a><hr>
 
 <h2 id="About">About ScaryCoronavirus</h2>
 
 <address>
- <p>Copyright © 2020 &ndash; 2021 Richard Callwood III. Some rights reserved.
- <p>This library is free software; you can redistribute it and/or modify it under the terms of the <a href="https://www.gnu.org/licenses/old-licenses/lgpl-2.1.html">GNU Lesser General Public License version 2.1</a> as published by the Free Software Foundation.
- <p>This library is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+ <p>Copyright © 2020 &ndash; 2025 Richard Callwood III. Some rights reserved.
+ <p>This library is free software: you can redistribute it and/or modify it under the terms of the
+ <a href="https://www.gnu.org/licenses/lgpl-3.0.html" target="_blank">GNU Lesser General Public License</a>
+ as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+ <p>This library is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
+ without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 </address>
 
-<p>The author of this module is not a microbiologist. This model is not intended to be an accurate portrayal of any virus.
+<p>The author of this module is not a microbiologist.
+This model is not intended to be an accurate portrayal of any virus.
 
 <h3 id="Categories">Object Collection Categories</h3>
 
@@ -255,6 +280,9 @@ It models a Gorgon-like virion based on the SARS-CoV-2 coronavirus. The protein 
  <li><strong>Areas of Interest</strong>
   <ul>
    <li>Organic forms
+    <ul>
+     <li>Microscopic
+    </ul>
   </ul>
  <li><strong>Contribution Types</strong>
   <ul>
@@ -291,7 +319,7 @@ It models a Gorgon-like virion based on the SARS-CoV-2 coronavirus. The protein 
   <td>2020 May 9</td>
   <td>
    <ul>
-    <li>The module is adapted for and released to the Object Collection.
+    <li>The library is adapted for and released to the Object Collection.
    </ul>
   </td>
  </tr><tr>
@@ -303,20 +331,33 @@ It models a Gorgon-like virion based on the SARS-CoV-2 coronavirus. The protein 
     <li>A correction is made to the User Manual.
    </ul>
   </td>
+ </tr><tr>
+  <td>1.0c-rc.1</td> <td>2025 October 9</td>
+  <td>
+   <ul>
+    <li>The license is upgraded to version 3 of the LGPL.
+   </ul>
+  </td>
  </tr>
 </table>
 
 <h3 id="Links">Links and Acknowledgments</h3>
 
 <ul>
+ <li><a href="https://lib.povray.org/searchcollection/index2.php?objectName=ScaryCoronavirus&amp;contributorTag=Cousin%20Ricky">Official ScaryCoronavirus repository</a>
+  and <a href="https://github.com/CousinRicky/POV-ScaryCoronavirus">GitHub mirror</a>
+ <li><a href="https://news.povray.org/povray.object-collection/">Object Collection discussion</a>
  <li><a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019" target="_blank">World Health Organization</a>
- <li>United States <a href="https://www.cdc.gov/coronavirus/2019-ncov/index.html?s_cid=%20fb_covid_19" target="_blank">Centers for Disease Control and Prevention</a> (CDC)
+ <li>United States <a href="https://www.cdc.gov/coronavirus/2019-ncov/index.html?s_cid=%20fb_covid_19" target="_blank">Centers for Disease Control and Prevention</a> (CDC).
+  Please note that, as the United States government has been in flux since early 2025, the reliability of the CDC cannot be guaranteed.
  <li><a href="https://phil.cdc.gov/Details.aspx?pid=23313" target="_blank">Illustration of the SARS-CoV-2 virion (CDC)</a>
+  (<a href="https://web.archive.org/web/20250101063354/https://phil.cdc.gov/Details.aspx?pid=23313" target="_blank">archived</a>)
  <li><a href="https://science.sciencemag.org/content/367/6483/1260" target="_blank">SARS-CoV-2 spike protein structure (<cite>Science</cite> magazine, 13 March 2020)</a>, showing the ACE2 binder
  <li><a href="https://commons.wikimedia.org/wiki/File:6VSB_spike_protein_SARS-CoV-2_monomer_in_homotrimer.png" target="_blank">Illustration of the SARS-CoV-2 spike protein (Wikimedia)</a>
 </ul>
 
-<p>Please obtain your COVID-19 information only from epidemiologists or other relevantly qualified medical experts. And remember that nothing you read on the Web ever constitutes medical advice.
+<p>Please obtain your COVID-19 information only from epidemiologists or other relevantly qualified medical experts.
+And remember that nothing you read on the Web ever constitutes medical advice.
 
 <p><a href="#toc">Table of contents</a>
 
