@@ -1,4 +1,4 @@
-/* scarycoronavirus.pov 1.0c-rc.1
+/* scarycoronavirus.pov 1.0c-rc.2 2025-Nov-26
  * Persistence of Vision Raytracer scene description file
  * POV-Ray Object Collection demo
  *

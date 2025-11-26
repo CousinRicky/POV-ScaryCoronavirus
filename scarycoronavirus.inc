@@ -1,4 +1,4 @@
-/* scarycoronavirus.inc 1.0c-rc.1
+/* scarycoronavirus.inc 1.0c-rc.2 2025-Nov-26
  * Persistence of Vision Raytracer include file
  * POV-Ray Object Collection
  *
@@ -43,7 +43,7 @@
 #declare ScaryCoronavirus_Version = 1.0;
 #version max (3.5, min (3.8, version)); // Bracket the POV version.
 #ifdef (View_POV_Include_Stack)
-  #debug "#include \"scarycoronavirus.inc\" //version 1.0c-rc.1\n"
+  #debug "#include \"scarycoronavirus.inc\" //version 1.0c-rc.2\n"
 #end
 
 #include "roundedge.inc"
